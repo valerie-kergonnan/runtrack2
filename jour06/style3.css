@@ -1,0 +1,9 @@
+body {
+    background-color: linear-gradient(to right, orange, yellow);
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+form {
+    padding:20px;
+    border: 3px solid green;
+    background-color: beige;
+}
