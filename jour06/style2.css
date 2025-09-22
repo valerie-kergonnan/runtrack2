@@ -1,10 +1,10 @@
 body {
-    background-color: black;
+    background-color: rgb(171, 82, 82);
     color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
 }
 form {
     padding: 20px;
-    border: 2px dashed red;
-    background-color: #333;
+    border: 2px dashed rgb(227, 182, 182);
+    background-color: #884e6d;
 }
