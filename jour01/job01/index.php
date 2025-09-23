@@ -8,9 +8,11 @@
     $str2="vive";
     echo $str2.$str ."<br>";
 
-    $val ="6";
+    $var1 ="6";
+    $var2 ="4";
+    $var3  = "$var1 + $var2";
 
-    echo $val+4 . "<br>";
+    echo $var1+4 . "<br>";
     $mybool="true";
     $mybool="false";
     echo $mybool;
