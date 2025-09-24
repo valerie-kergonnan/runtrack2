@@ -44,7 +44,7 @@ function cesar($str, $decalage =2){
     $resultat = "";
     for ($i =0; $i< strlen($str); $i++){
         $car = $str[$i];
-        if (ctype-alpha($car)) {
+        if (ctype_alpha($car)) {
             $base =ctype_upper($car) ? ord("A") : ord ("a");
             $resultat = chr(($base + (ord($car) - $base + $decalage) % 26));
         } else {
@@ -55,7 +55,7 @@ function cesar($str, $decalage =2){
 }
 
 function plateforme($str){
-    $mots = explode("", $str);
+    $mots = explode(" ", $str);
     foreach ($mots as $mot){
         if (substr($mot, -2) === "me"){
             echo $mot . "_";
