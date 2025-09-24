@@ -11,19 +11,19 @@
 
 <!--formulaire-->
 
-<for  method ="post">
+<form  method="post">
     <label for="str">Texte:</label>
     <input type="text" id="str" name="str">
 
-    <label for ="function"> choisir une fonction :</label>
-    <select id =" fonction" name= "fonction">
+    <label for="function"> choisir une fonction :</label>
+    <select id="fonction" name="fonction">
 
-    <option value ="gras">Gras</option>
-    <option value ="cesar">Cesar</option>
+    <option value="gras">Gras</option>
+    <option value="cesar">Cesar</option>
     <option value="plateforme">Plateforme</option>
 </select>
 
-<buttom type="submit">valider</buttom>
+<input type="submit" value="valider">
 </form>
 
 <?php
@@ -32,7 +32,7 @@
 function gras($str){
     $mots = explode(" ", $str);
     foreach ($mots as $mot){
-        if (ctype_upper(substr($mots, 0, 1))){
+        if (ctype_upper(substr($mot, 0, 1))){
             echo "<b>$mot</b>" ;
         }else {
             echo "$mot ";
